@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRODUCT TABLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .product-table th, .product-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .product-table th {
+            background-color: #f2f2f2;
+        }
+        .product-table tr:nth-child(even) {
+            background-color: #e6f7ff; /* Light blue */
+        }
+        .product-table tr:nth-child(odd) {
+            background-color: #ffffff; /* White */
+        }
+        .product-table td {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <!-- Product Name, Price, Availability -->
-    <!-- At least 5 different products -->
+    <h1>Product Table</h1>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Café Americano</td>
+                <td>Php 120.00</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Caramel Macchiato</td>
+                <td>Php 160.00</td>
+                <td>Out of Stock</td>
+            </tr>
+            <tr>
+                <td>Spanish Latte</td>
+                <td>Php 150.00</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Blueberry Cheesecake</td>
+                <td>Php 180.00</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Chocolate Croissant</td>
+                <td>Php 90.00</td>
+                <td>Limited Stock</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
