@@ -58,27 +58,40 @@
     </style>
 </head>
 <body>
-    <!-- MODIFY the HTML code so that signup form will allow user to register an account. 
-    And instead of asking for the full name of the user, ask for the last name, first name, and middle name.
-    Apply the required attribute to those fields that need to be required -->
-
-    <!-- Add validation to the password textfield using pattern attribute -->
     <div class="container">
         <h1>Sign Up</h1>
         <form action="#" method="post">
+            <!-- LAST NAME -->
             <div class="form-group">
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname">
             </div>
+            
+            <!-- FIRST NAME -->
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname">
+            </div>
+
+            <!-- MIDDLE NAME -->
+            <div class="form-group">
+                <label for="middlename">Middle Name:</label>
+                <input type="text" id="middlename" name="middlename">
+
+            <!-- EMAIL -->
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
             </div>
+
+            <!-- PASSWORD -->
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}">
                 <small>Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character (!@#$%^&*).</small>
             </div>
+
+            <!-- SIGN UP -->
             <button type="submit">Sign Up</button>
         </form>
     </div>
