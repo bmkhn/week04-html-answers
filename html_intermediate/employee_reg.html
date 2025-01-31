@@ -69,29 +69,28 @@
     </style>
 </head>
 <body>
-    <!-- MODIFY - values from input should be displayed in the console -->
     <div class="container">
         <h1>Employee Registration</h1>
         <form action="#" method="post" id="registration-form">
             <div class="form-group">
                 <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" required>
+                <input type="text" id="last_name" name="last_name" required>
             </div>
             <div class="form-group">
                 <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" required>
+                <input type="text" id="first_name" name="first_name" required>
             </div>
             <div class="form-group">
                 <label for="middle_name">Middle Name:</label>
-                <input type="text" id="middle_name">
+                <input type="text" id="middle_name" name="middle_name">
             </div>
             <div class="form-group">
                 <label for="birthdate">Birthdate:</label>
-                <input type="date" id="birthdate" required>
+                <input type="date" id="birthdate" name="birthdate" required>
             </div>
             <div class="form-group">
                 <label for="department">Department:</label>
-                <select id="department" required>
+                <select id="department" name="department" required>
                     <option value="hr">HR</option>
                     <option value="finance">Finance</option>
                     <option value="it">IT</option>
@@ -100,10 +99,27 @@
             </div>
             <div class="form-group">
                 <label for="office">Office:</label>
-                <input type="text" id="office" required>
+                <input type="text" id="office" name="office" required>
             </div>
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <script>
+        // Add an event listener to the form to handle form submission
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+            
+            // Get the form element and create a FormData object from it
+            var form = event.target; 
+            var formData = new FormData(form);
+
+            // Iterate over the FormData entries and log them to the console
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ': ' + pair[1]);
+            }
+        });
+    </script>
+
 </body>
 </html>
