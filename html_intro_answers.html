@@ -7,13 +7,46 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0px;
+            padding-bottom: 60px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            font-size: 12px;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            width: 30%;
+            text-align: center;
+        }
+        .author {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .author-columns {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+        }
+        .author-columns h3 {
+            font-size: 14px;
+        }
+        .author-columns a {
+            text-decoration: none;
+            margin: 0 5px;
         }
     </style>
 </head>
 <body>
     <!-- ACTIVITY 01 -->
-    <!-- Different tags used in cozycup-boilerplate at this link: https://github.com/CC6-Pancake/cozycup-cafe-boilerplate -->
     <h1>Activity 01</h1>
+    <!-- Different tags used in cozycup-boilerplate at this link: https://github.com/CC6-Pancake/cozycup-cafe-boilerplate -->
     <p>Here are the different tags used in the cozycup-boilerplate:</p>
     <ul>
         <li>&lt;!DOCTYPE html&gt; - Defines the document type and version of HTML.</li>
@@ -39,15 +72,18 @@
 
     <!-- ACTIVITY 02 -->
     <h1>Activity 02</h1>
+    <!-- Different internal links that are used in cozycup-boilerplate? -->
     <p>Here are the different internal links used in the cozycup-boilerplate:</p>
     <ul>
-        <li>&lt;a href="#home"&gt;Home&lt;/a&gt; - Links to the section with the <code>id="home"</code>.</li>
-        <li>&lt;a href="#menu"&gt;Menu&lt;/a&gt; - Links to the section with the <code>id="menu"</code>.</li>
-        <li>&lt;a href="#about"&gt;About Us&lt;/a&gt; - Links to the section with the <code>id="about"</code>.</li>
-        <li>&lt;a href="#contact"&gt;Contact&lt;/a&gt; - Links to the section with the <code>id="contact"</code>.</li>
-        <li>&lt;a href="#menu" class="cta-button"&gt;Explore Menu&lt;/a&gt; - Links to the section with the <code>id="menu"</code>.</li>
+        <li>&lt;a href="#home"&gt;Home&lt;/a&gt; - Links to the section with the id="home".</li>
+        <li>&lt;a href="#menu"&gt;Menu&lt;/a&gt; - Links to the section with the id="menu".</li>
+        <li>&lt;a href="#about"&gt;About Us&lt;/a&gt; - Links to the section with the id="about".</li>
+        <li>&lt;a href="#contact"&gt;Contact&lt;/a&gt; - Links to the section with the id="contact".</li>
+        <li>&lt;a href="#menu" class="cta-button"&gt;Explore Menu&lt;/a&gt; - Links to the section with the id="menu".</li>
     </ul>
+
     <!-- Create a footer and provide a link to your email, Facebook, and GitHub account -->
+    <!-- BELOW -->
 
     <!-- ACTIVITY 03 -->
     <h1>Activity 03</h1>
@@ -78,5 +114,39 @@
     <p>"We suffer more often in imagination than in reality." - <em>Seneca</em></p> <br>
     <p>"The only way to do great work is to love what you do." - <strong><em>Epictetus</em></strong></p>
     <!-- copied the exact awkward spacing... -->
+
+    <footer>
+        <h2>Authors</h2>
+        <div class="author">
+            <div class="author-columns">
+                <h3>Julius Vincent D. Llavan</h3>
+                <p>
+                    <a href="https://www.facebook.com/juliusvincentllavan.babbi">
+                        <img src="img\Facebook.svg" alt="Facebook" width="30">
+                    </a>
+                    <a href="https://github.com/bmkhn">
+                        <img src="img\Github.svg" alt="GitHub" width="30">
+                    </a>
+                    <a href="mailto:202280209@psu.palawan.edu.ph">
+                        <img src="img\Gmail.svg" alt="Gmail" width="30">
+                    </a>
+                </p>
+            </div>
+            <div class="author-columns">
+                <h3>Diane Nicole R. Antonio</h3>
+                <p>
+                    <a href="https://www.facebook.com/dianenicolerodriguez.antonio"></a>
+                        <img src="img\Facebook.svg" alt="Facebook" width="30">
+                    </a>
+                    <a href="https://github.com/dianeAntonio">
+                        <img src="img\Github.svg" alt="GitHub" width="30">
+                    </a>
+                    <a href="mailto:202280159@psu.palawan.edu.ph">
+                        <img src="img\Gmail.svg" alt="Gmail" width="30">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
